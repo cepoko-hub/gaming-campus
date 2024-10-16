@@ -13,7 +13,7 @@
         <div class="container mx-auto flex flex-wrap justify-between items-center">
             <button class="block md:hidden text-white" id="nav-toggle">
                 <!-- Icône menu hamburger pour mobile -->
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                <svg class="w-6 h-6" fill="none" stroke="black" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -33,7 +33,7 @@
         </div>
     </nav>
 
-    <!-- Section principale avec image de fond -->
+    <!-- Section principale -->
     <section class="relative bg-cover bg-center py-20"
         style="background-color: black;">
         <div class="absolute inset-0 bg-black opacity-70"></div>
@@ -49,8 +49,110 @@
         </div>
     </section>
 
+    <!-- Section gaming card -->
+    <section class="bg-white text-black py-24 px-6 my-16">
+        <div class="container mx-auto">
+            <p class="text-lg leading-relaxed">
+                Imaginé par les professionnels des jeux vidéo et de l'éducation, Gaming Campus est un lieu unique pour révéler les talents et développer les compétences.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section cards -->
+    <section class="bg-black text-white py-24 px-6 my-12">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-16">
+          
+          <!-- Card 1: Gaming Business School -->
+          <div class="text-center flex-1">
+            <img src="asset/img/logo-gbs-home.png" alt="GBS Logo" class="mx-auto mb-6">
+            <h3 class="text-xl font-bold mb-4">GAMING BUSINESS SCHOOL</h3>
+            <p class="mb-6">
+              Formez-vous dans la première école de management dédiée aux enjeux et métiers du jeu vidéo.
+            </p>
+            <a href="#" class="bg-transparent border border-white text-white font-bold py-2 px-4 rounded hover:text-purple-400 transition-colors duration-300">
+                EN SAVOIR PLUS
+            </a>
+          </div>
+          
+          <!-- Card 2: Gaming Academy -->
+          <div class="text-center flex-1">
+            <img src="asset/img/logo-ga-home.png" alt="Gaming Academy Logo" class="mx-auto mb-6">
+            <h3 class="text-xl font-bold mb-4">GAMING ACADEMY</h3>
+            <p class="mb-6">
+              Entraînez-vous dans des conditions optimales pour devenir esportif professionnel.
+            </p>
+            <a href="#" class="bg-transparent border border-white text-white font-bold py-2 px-4 rounded hover:text-purple-400 transition-colors duration-300">
+                EN SAVOIR PLUS
+            </a>
+          </div>
+          
+          <!-- Card 3: Gaming Guru -->
+          <div class="text-center flex-1">
+            <img src="asset/img/logo-gg-home.png" alt="Gaming Guru Logo" class="mx-auto mb-6">
+            <h3 class="text-xl font-bold mb-4">GAMING GURU</h3>
+            <p class="mb-6">
+              Jouez avec les meilleurs gamers pour vous améliorer dans vos jeux vidéo préférés.
+            </p>
+            <a href="#" class="bg-transparent border border-white text-white font-bold py-2 px-4 rounded hover:text-purple-400 transition-colors duration-300">
+                EN SAVOIR PLUS
+            </a>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Section News -->
+      <section class="bg-white text-black py-24 px-6 my-16">
+        <div class="container mx-auto flex justify-between items-center">
+          
+          <!-- Texte à gauche -->
+          <div>
+            <h2 class="text-2xl font-bold mb-4">LES NEWS DU CAMPUS</h2>
+            <p class="text-gray-600">
+              Suivez l'actualité du Gaming Campus, de G. Guru, G.B.S et G. Academy.
+            </p>
+          </div>
+          
+          <!-- Bouton à droite -->
+          <div>
+            <a href="#" class="bg-transparent border border-gray-800 text-gray-800 font-bold py-2 px-4 rounded hover:text-purple-400 transition-colors duration-300">
+              LA NEWSROOM
+            </a>
+          </div>
+          
+        </div>
+
+        <div class="bg-white p-6">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 md:space-x-6">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg p-4 rounded-md max-w-xs">
+                    <img src="asset/img/inauguration_gaming_campus_photo.jpg" alt="Réunion d'information 19 décembre" class="rounded-md mb-4">
+                    <h2 class="text-lg font-bold text-black">Réunion d'information 19 décembre</h2>
+                    <p class="text-sm text-black mt-2">Venez à notre rencontre lors de cette réunion d'information...</p>
+                    <a href="#" class="mt-4 inline-block text-black">SUR INSCRIPTION &gt;</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white shadow-lg p-4 rounded-md max-w-xs">
+                    <img src="asset/img/pgw18home.jpg" alt="Paris Games Week 2018" class="rounded-md mb-4">
+                    <h2 class="text-lg font-bold text-black">Paris Games Week 2018</h2>
+                    <p class="text-sm text-black mt-2">Pendant tout le mois d'octobre, venez rencontrer l'équipe pédagogique...</p>
+                    <a href="#" class="mt-4 inline-block text-black">LIRE LA SUITE &gt;</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white shadow-lg p-4 rounded-md max-w-xs">
+                    <img src="asset/img/inauguration_gaming_campus_photo.jpg" alt="Inauguration Gaming Campus Lyon" class="rounded-md mb-4">
+                    <h2 class="text-lg font-bold text-black">Inauguration Gaming Campus Lyon</h2>
+                    <p class="text-sm text-black mt-2">Revivez l'inauguration du Gaming Campus Lyon avec les 180 invités...</p>
+                    <a href="#" class="mt-4 inline-block text-black">LIRE LA SUITE &gt;</a>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      
+    
+      
     <script>
-        // Script pour rendre la navbar responsive
+        // Script menu burger
         const navToggle = document.getElementById('nav-toggle');
         const navContent = document.getElementById('nav-content');
 
