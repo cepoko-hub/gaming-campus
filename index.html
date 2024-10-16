@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <nav class="bg-white p-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <button class="block md:hidden text-white" id="nav-toggle">
+                <!-- Icône menu hamburger pour mobile -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:flex md:items-center md:w-auto" id="nav-content">
+                <ul class="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0 pl-36">
+                    <li><a href="#" class="text-black hover:text-purple-400">Accueil</a></li>
+                    <li><a href="#" class="text-black hover:text-purple-400">Business School</a></li>
+                    <li><a href="#" class="text-black hover:text-purple-400">École eSport</a></li>
+                    <li><a href="#" class="text-black hover:text-purple-400">Cours de jeux vidéo</a></li>
+                    <li><a href="#" class="text-black hover:text-purple-400">Le Campus</a></li>
+                    <li><a href="#" class="text-black hover:text-purple-400">Newsroom</a></li>
+                    <li><a href="#" class="text-black hover:text-purple-400">Parents</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section principale avec image de fond -->
+    <section class="relative bg-cover bg-center py-20"
+        style="background-color: black;">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="relative z-10 flex items-center justify-center h-full">
+            <div class="text-center">
+                <img src="asset/img/logo-gc-hero.png" alt="Logo" class="mx-auto mb-6">
+                <h1 class="text-4xl md:text-6xl font-bold text-white">Passion. Professionnalisme. Performance.</h1>
+                <a href="#"
+                    class="mt-4 inline-block bg-transparent border border-white hover:bg-purple-600 text-white font-bold py-2 px-4 rounded">
+                    Gaming Campus en vidéo >
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Script pour rendre la navbar responsive
+        const navToggle = document.getElementById('nav-toggle');
+        const navContent = document.getElementById('nav-content');
+
+        navToggle.addEventListener('click', () => {
+            navContent.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
